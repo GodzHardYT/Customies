@@ -1,0 +1,25 @@
+{
+	"name": "whitegodz/customies",
+	"license": "proprietary",
+	"scripts": {
+		"fmt": "vendor/bin/php-cs-fixer fix",
+		"analyze": "vendor/bin/phpstan",
+		"build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -p=Customies.phar"
+	},
+	"require-dev": {
+		"php": "^8.2",
+		"sof3/pharynx": "^0.3.6",
+		"pocketmine/pocketmine-mp": "^5.6.0",
+		"friendsofphp/php-cs-fixer": "^3.4",
+		"phpstan/phpstan": "^1.2"
+	},
+	"autoload": {
+		"classmap": ["src"]
+	},
+	"authors": [
+		{
+			"name": "WHiTeGODz",
+			"email": "francydona0@gmail.com"
+		}
+	]
+}
